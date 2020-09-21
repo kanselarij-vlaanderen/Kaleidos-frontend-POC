@@ -1,0 +1,23 @@
+<div class="flex-container">
+  <div>
+    <h3>Values from the parent(Immutable)</h3>
+    <p>Firstname: {{@person.person.firstName}} </p>
+    <p>Lastname: {{@person.person.lastName}} </p>
+    <p>Age: {{@person.person.age}} </p>
+  </div>
+  <div>
+    <h2>Address(Relationship)</h2>
+    <p>Street: {{@person.address.streetName}} </p>
+    <p>House number: {{@person.address.houseNumber}} </p>
+    <p>City: {{@person.address.city}} </p>
+    <p>Postcode: {{@person.address.postalCode}} </p>
+  </div>
+  <div>
+    <h3>Local tracked values(Mutable)</h3>
+    <p>Firstname: {{this.trackedPerson.firstName}} </p>
+    <p>Lastname: {{this.trackedPerson.lastName}} </p>
+    <p>Age: {{this.trackedPerson.age}} </p>
+  </div>
+  <button {{on "click" this.trackedValues}}>Get Tracked Values</button>
+  <button {{on "click" this.updateParentValues}}>Update parent values</button>
+</div>

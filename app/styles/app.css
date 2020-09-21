@@ -1,0 +1,16 @@
+.flex-container {
+  display: flex;
+}
+
+.flex-container > div {
+  margin: 10px;
+  height: 25rem;
+  width: 40rem;
+  text-align: center;
+  font-size: 30px;
+  border: black 2px solid;
+}
+
+button {
+  margin: 10px;
+}
